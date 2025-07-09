@@ -1,0 +1,25 @@
+{
+    "name": "doc-execcommand",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build:esm": "tsc",
+        "build:iife": "tsup src/index.ts --format iife --no-dts --out-dir dist/iife",
+        "build": "npm run build:esm && npm run build:iife"
+    },
+    "main": "dist/esm/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/esm/index.d.ts",
+    "unpkg": "dist/iife/index.js",
+    "files": [
+        "dist"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.3"
+    }
+}
