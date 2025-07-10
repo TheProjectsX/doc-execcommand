@@ -1,4 +1,3 @@
-.vscode
 dist
 
 # Logs
@@ -59,3 +58,4 @@ typings/
 
 # dotenv environment variables file
 .env
+.gitignore
